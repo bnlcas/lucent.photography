@@ -1,0 +1,29 @@
+body{
+    height:100VW;
+    width:70VW;
+    margin-left: 15VW;
+    margin-top: 5VW;
+    padding: 5px;
+    font-family: 'Cormorant Garamond', Garamond, Times, serif;
+    font-weight: normal;
+    font-size: 18;
+    background-color: hwb(0 9% 91%);
+    color: #e6e3e3;
+}
+
+a {
+    color:hwb(0 78% 22%)
+}
+
+img {
+    max-height: 70VH;
+    max-width: 70VW;
+}
+
+.image_holder {
+    text-align: center;
+}
+
+.app-store-link {
+    margin-bottom:15px;
+}

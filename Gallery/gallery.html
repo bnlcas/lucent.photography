@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <style>
+      
+        body{
+            margin:0px;
+            padding:0px;
+            background-color: #222;
+            align-items: center;
+        }
+
+        .overlay {
+          position: fixed;
+          background-color: RGBA(0,0,0,0);
+          background-repeat: no-repeat;
+          background-position: center;  
+          background-attachment: fixed;
+          background-size: contain;
+          width: 100%;
+          height:100%;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          cursor: zoom-out;
+          background-image: none;
+          pointer-events: none;
+      }
+
+        .images-container {
+            text-align: center;
+        }
+        .container-image {
+            padding: 0px;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 0px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+          flex: 24.75%;
+          max-width: 24%;
+          padding: 4 4px;
+        }
+
+        img {
+          width: 100%;
+          margin: 4 4 4 4px;
+        }
+
+        .column img {
+          /*margin-top: 8px;*/
+          vertical-align: middle;
+          width: 99%;
+
+          outline: solid 1px #222;
+          transition: outline 0.2s ease-out;
+        }
+
+        .column img:hover {
+          outline-width: 1px;
+          outline-color: #ddd;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            flex: 48%;
+            max-width: 48%;
+          }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            flex: 99%;
+            max-width: 99%;
+          }
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <!-- <div class="images-container" id="main"></div>-->
+    <div class="overlay" id="overlay"></div>
+    <div class="row" id="row"> 
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
